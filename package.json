@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "tsx tests/bio-generator.test.ts",
+    "test": "tsx tests/bio-generator.test.ts && tsx tests/hashtag-generator.test.ts",
     "check": "npm run typecheck && npm run test && npm run build"
   },
   "dependencies": {
