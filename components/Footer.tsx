@@ -1,5 +1,15 @@
 import Link from "next/link";
 
+const LINKS = [
+  { href: "/", label: "Home" },
+  { href: "/tools", label: "Tools" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/terms", label: "Terms" },
+] as const;
+
 export function Footer() {
   return (
     <footer className="mt-24 border-t border-white/10 bg-navy-950/60">
@@ -9,10 +19,11 @@ export function Footer() {
           <p className="mt-1 text-sm text-slate-500">Creator tools for India and the world.</p>
         </div>
         <nav aria-label="Footer" className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-400">
-          <Link href="/" className="hover:text-white">Home</Link>
-          <Link href="/tools" className="hover:text-white">Tools</Link>
-          <Link href="/pricing" className="hover:text-white">Pricing</Link>
-          <Link href="/about" className="hover:text-white">About</Link>
+          {LINKS.map((link) => (
+            <Link key={link.href} href={link.href} className="hover:text-white">
+              {link.label}
+            </Link>
+          ))}
         </nav>
       </div>
       <div className="border-t border-white/5 py-4 text-center text-xs text-slate-600">
