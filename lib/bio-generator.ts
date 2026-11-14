@@ -129,7 +129,7 @@ const TONE_DATA: Record<Tone, ToneData> = {
 
 /* ------------------------------ helpers ------------------------------ */
 
-function shuffle<T>(items: readonly T[], rng: Rng): T[] {
+export function shuffle<T>(items: readonly T[], rng: Rng): T[] {
   const copy = [...items];
   for (let i = copy.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
@@ -138,7 +138,7 @@ function shuffle<T>(items: readonly T[], rng: Rng): T[] {
   return copy;
 }
 
-function pick<T>(items: readonly T[], rng: Rng): T {
+export function pick<T>(items: readonly T[], rng: Rng): T {
   return items[Math.min(Math.floor(rng() * items.length), items.length - 1)];
 }
 

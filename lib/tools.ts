@@ -28,9 +28,9 @@ export const TOOLS: Tool[] = [
   {
     slug: "hashtag-generator",
     name: "Hashtag Generator",
-    description: "Find relevant hashtag sets for your posts and reels.",
+    description: "Generate keyword-based hashtag ideas for your posts and reels. Runs in your browser.",
     category: "Instagram",
-    status: "coming-soon",
+    status: "live",
     icon: "hash",
     keywords: ["hashtags", "reach", "reels"],
   },
