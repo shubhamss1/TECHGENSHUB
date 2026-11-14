@@ -32,7 +32,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Tool directory"
           title="Find the right tool"
-          subtitle="Search by name or filter by platform. One tool is live today and more are on the way."
+          subtitle="Search by name or filter by platform. New tools are added as they ship."
         />
         <div className="mt-10">
           <ToolDirectory tools={TOOLS} />
