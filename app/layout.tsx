@@ -2,15 +2,23 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(SITE_URL),
   title: { default: "TECHGENSHUB Creator Toolkit", template: "%s | TECHGENSHUB" },
   description: "Free creator tools for India and international creators. Create more, grow faster.",
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: "TECHGENSHUB Creator Toolkit",
+    description: "Free creator tools for India and international creators. Create more, grow faster.",
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {

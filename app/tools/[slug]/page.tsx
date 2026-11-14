@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Icon } from "@/components/Icon";
 import { TOOL_COMPONENTS } from "@/components/tools";
+import { TOOL_GUIDES } from "@/lib/tool-guides";
 import { TOOLS, getToolBySlug } from "@/lib/tools";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -17,7 +18,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const tool = getToolBySlug(slug);
   if (!tool) return { title: "Tool not found" };
-  return { title: tool.name, description: tool.description };
+  return {
+    title: tool.name,
+    description: tool.description,
+    // "Coming soon" pages have little content, so keep them out of search results.
+    robots: tool.status === "live" ? undefined : { index: false, follow: true },
+  };
 }
 
 export default async function ToolPage({ params }: Props) {
@@ -26,6 +32,7 @@ export default async function ToolPage({ params }: Props) {
   if (!tool) notFound();
 
   const ToolComponent = TOOL_COMPONENTS[tool.slug];
+  const guide = TOOL_GUIDES[tool.slug];
 
   return (
     <div className="container-page py-12">
@@ -60,6 +67,44 @@ export default async function ToolPage({ params }: Props) {
           </div>
         )}
       </div>
+
+      {ToolComponent && guide && (
+        <div className="mx-auto mt-16 grid max-w-5xl gap-6 lg:grid-cols-2">
+          <section className="card p-6">
+            <h2 className="text-xl font-semibold">How to use the {tool.name}</h2>
+            <ol className="mt-4 list-decimal space-y-3 pl-5 text-slate-300">
+              {guide.howTo.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ol>
+          </section>
+
+          <section className="card p-6">
+            <h2 className="text-xl font-semibold">Tips for better results</h2>
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-slate-300">
+              {guide.tips.map((tip) => (
+                <li key={tip}>{tip}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="card p-6 lg:col-span-2">
+            <h2 className="text-xl font-semibold">Frequently asked questions</h2>
+            <div className="mt-4 divide-y divide-white/10">
+              {guide.faq.map((item) => (
+                <details key={item.q} className="group py-3">
+                  <summary className="cursor-pointer list-none font-medium text-white marker:content-none">
+                    <span className="mr-2 text-electric-400 group-open:hidden">+</span>
+                    <span className="mr-2 hidden text-electric-400 group-open:inline">−</span>
+                    {item.q}
+                  </summary>
+                  <p className="mt-2 pl-5 text-slate-400">{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        </div>
+      )}
     </div>
   );
 }
