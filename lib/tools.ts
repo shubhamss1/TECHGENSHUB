@@ -46,9 +46,9 @@ export const TOOLS: Tool[] = [
   {
     slug: "youtube-title-ideas",
     name: "YouTube Title Ideas",
-    description: "Brainstorm clear, clickable video titles for any topic.",
+    description: "Brainstorm clear video title ideas from your topic and style. Runs in your browser.",
     category: "YouTube",
-    status: "coming-soon",
+    status: "live",
     icon: "play",
     keywords: ["video", "titles", "youtube", "shorts"],
   },

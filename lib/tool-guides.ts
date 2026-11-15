@@ -73,4 +73,26 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
       { q: "Why does my topic sound awkward in a caption?", a: "Your topic is inserted word for word, so a short phrase such as “my morning routine” works best. Edit any result to fit." },
     ],
   },
+  "youtube-title-ideas": {
+    howTo: [
+      "Enter your video topic in a few words, for example “budget travel in India” or “learning guitar”.",
+      "Pick a title style: how-to, list, question, story or review.",
+      "Add optional keywords, and switch on “Add the current year” if the video is time-sensitive.",
+      "Press Generate titles, copy the ones you like and edit them. Press Regenerate for more ideas.",
+    ],
+    tips: [
+      "Make sure the title honestly matches your video. Misleading titles can hurt viewer trust and may break YouTube’s rules.",
+      "Put your main keyword near the start, so viewers and search can see what the video is about.",
+      "Keep titles clear and fairly short. Long titles can be cut off in some places, and the count shows each title’s length.",
+      "Write two or three versions and pick the one that matches your thumbnail and opening seconds.",
+      "Only add a year if the information will go out of date, such as a guide or a review.",
+    ],
+    faq: [
+      { q: "Is the YouTube Title Ideas tool free?", a: "Yes. It is free to use and does not need an account." },
+      { q: "Does it use AI or send my topic anywhere?", a: "No. It builds titles from local templates in your browser, so nothing you type is sent to a server." },
+      { q: "How long can a YouTube title be?", a: "YouTube titles can be up to 100 characters. Every suggestion here fits that limit and shows its length." },
+      { q: "Will these titles get me more views?", a: "No tool can promise that. These are starting points. A good title still needs to match a good video." },
+      { q: "Why is my topic capitalised in the titles?", a: "Titles read best in Title Case, so your topic is capitalised for you. Words that already have capitals, such as SEO or iPhone, are left as you typed them." },
+    ],
+  },
 };
