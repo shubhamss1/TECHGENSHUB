@@ -117,4 +117,26 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
       { q: "Why does my topic work better as a short word?", a: "The ideas insert your topic word for word, so a short noun such as “guitar” reads better than a long phrase. You can always edit the result." },
     ],
   },
+  "content-calendar-planner": {
+    howTo: [
+      "Enter your topic or niche, for example “home workouts” or “street food”.",
+      "Choose the platforms you post on: Instagram, YouTube, TikTok or any mix.",
+      "Pick how many posts per week you can realistically make in total, and how many weeks to plan.",
+      "Press Build my plan, then copy it or download it as a CSV file you can open in Excel or Google Sheets.",
+    ],
+    tips: [
+      "Start with a posting rhythm you can keep. Steady posting beats a burst you cannot maintain.",
+      "Batch your work: film or write several posts in one sitting, then spread them across the week.",
+      "Treat the plan as a starting point. Swap ideas, move days and leave room for timely topics.",
+      "Mix useful posts, personal posts and a little promotion, rather than selling in every post.",
+      "Review how your posts perform in each platform’s analytics, then adjust the next plan.",
+    ],
+    faq: [
+      { q: "Is the Content Calendar Planner free?", a: "Yes. It is free to use and does not need an account." },
+      { q: "Does it use AI or send my topic anywhere?", a: "No. The plan is built from local templates in your browser, so nothing you type is sent to a server." },
+      { q: "What are the best days and times to post?", a: "That depends on your audience, and this tool does not claim to know. The days are simple suggestions. Use each platform’s analytics to find what works for you." },
+      { q: "How are posts split across platforms?", a: "The posts per week are a total. They are shared across the platforms you choose, taking turns, so you are not asked to make that many posts on each one." },
+      { q: "Can I save my plan?", a: "Yes. Use Copy plan to paste it into a note or document, or Download CSV to open it in a spreadsheet." },
+    ],
+  },
 };

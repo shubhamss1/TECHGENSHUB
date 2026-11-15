@@ -64,9 +64,9 @@ export const TOOLS: Tool[] = [
   {
     slug: "content-calendar-planner",
     name: "Content Calendar Planner",
-    description: "Plan a consistent posting schedule across your platforms.",
+    description: "Plan a simple weekly posting schedule across your platforms. Runs in your browser.",
     category: "Planning",
-    status: "coming-soon",
+    status: "live",
     icon: "calendar",
     keywords: ["schedule", "planner", "calendar", "consistency"],
   },
