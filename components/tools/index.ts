@@ -1,4 +1,5 @@
 import type { ComponentType } from "react";
+import CaptionGenerator from "./CaptionGenerator";
 import HashtagGenerator from "./HashtagGenerator";
 import InstagramBioGenerator from "./InstagramBioGenerator";
 
@@ -6,4 +7,5 @@ import InstagramBioGenerator from "./InstagramBioGenerator";
 export const TOOL_COMPONENTS: Record<string, ComponentType> = {
   "instagram-bio-generator": InstagramBioGenerator,
   "hashtag-generator": HashtagGenerator,
+  "caption-generator": CaptionGenerator,
 };
