@@ -37,9 +37,9 @@ export const TOOLS: Tool[] = [
   {
     slug: "caption-generator",
     name: "Caption Generator",
-    description: "Draft scroll-stopping captions in the tone that fits your brand.",
+    description: "Draft ready-to-edit captions from your post topic, goal and tone. Runs in your browser.",
     category: "Instagram",
-    status: "coming-soon",
+    status: "live",
     icon: "message",
     keywords: ["caption", "copywriting", "posts"],
   },

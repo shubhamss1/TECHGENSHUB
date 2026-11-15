@@ -51,4 +51,26 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
       { q: "Does it work for non-English topics?", a: "Yes. Topics typed in other languages, including Hindi, are turned into hashtags the same way." },
     ],
   },
+  "caption-generator": {
+    howTo: [
+      "Describe what your post is about, for example “my new morning routine”.",
+      "Pick a goal: spark conversation, promote, tell a story or share a tip.",
+      "Choose a tone, add optional keywords, and decide whether to include a call to action and emoji.",
+      "Press Generate captions, copy the one you like and edit it before you post. Press Regenerate for more options.",
+    ],
+    tips: [
+      "Lead with your hook. The first line is what people see before they tap “more”.",
+      "Describe your post in a short phrase rather than a full sentence, so the captions read naturally.",
+      "Personalise the caption with a real detail, such as a place, a name or a result.",
+      "Use one clear call to action per post, such as comment, save or visit the link.",
+      "Read it aloud once. If it does not sound like you, change it.",
+    ],
+    faq: [
+      { q: "Is the Caption Generator free?", a: "Yes. It is free to use and does not need an account." },
+      { q: "Does it use AI or send my text anywhere?", a: "No. It assembles captions from local templates in your browser, so nothing you type is sent to a server." },
+      { q: "How long can an Instagram caption be?", a: "Instagram captions can be up to 2,200 characters. These suggestions are much shorter and show their character count." },
+      { q: "Can I use it for YouTube or TikTok?", a: "Yes. The captions are general purpose, so you can adapt them, but check each platform’s own limits." },
+      { q: "Why does my topic sound awkward in a caption?", a: "Your topic is inserted word for word, so a short phrase such as “my morning routine” works best. Edit any result to fit." },
+    ],
+  },
 };
