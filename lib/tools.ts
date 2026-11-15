@@ -55,9 +55,9 @@ export const TOOLS: Tool[] = [
   {
     slug: "thumbnail-text-ideas",
     name: "Thumbnail Text Ideas",
-    description: "Short, punchy text options to make your thumbnails stand out.",
+    description: "Get short, punchy text ideas for your video thumbnails. Runs in your browser.",
     category: "YouTube",
-    status: "coming-soon",
+    status: "live",
     icon: "type",
     keywords: ["thumbnail", "text", "youtube"],
   },

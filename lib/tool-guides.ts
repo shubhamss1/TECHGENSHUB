@@ -95,4 +95,26 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
       { q: "Why is my topic capitalised in the titles?", a: "Titles read best in Title Case, so your topic is capitalised for you. Words that already have capitals, such as SEO or iPhone, are left as you typed them." },
     ],
   },
+  "thumbnail-text-ideas": {
+    howTo: [
+      "Enter your video topic as a short word or phrase, for example “guitar” or “keto diet”.",
+      "Pick a style: curiosity, benefit, warning, challenge or minimal.",
+      "Add optional keywords, and choose whether you want ALL CAPS.",
+      "Press Generate thumbnail text, copy the one you like and add it to your thumbnail design. Press Regenerate for more ideas.",
+    ],
+    tips: [
+      "Keep thumbnail text to a few words. Every idea here is six words or fewer.",
+      "Do not repeat your whole title. Let the text add a hook that the title does not already give.",
+      "Use large, high-contrast letters so the text stays readable on a phone screen.",
+      "Make sure the text is true to the video. Misleading thumbnails can cost you viewers’ trust.",
+      "Try two or three different texts and see which one fits your image best.",
+    ],
+    faq: [
+      { q: "Is the Thumbnail Text Ideas tool free?", a: "Yes. It is free to use and does not need an account." },
+      { q: "Does it use AI or send my topic anywhere?", a: "No. It builds text from local templates in your browser, so nothing you type is sent to a server." },
+      { q: "How long should thumbnail text be?", a: "As short as you can make it. This tool keeps every idea to six words or fewer and 40 characters or fewer." },
+      { q: "Will this text get me more clicks?", a: "No tool can promise that. These are starting points. Test what works for your audience." },
+      { q: "Why does my topic work better as a short word?", a: "The ideas insert your topic word for word, so a short noun such as “guitar” reads better than a long phrase. You can always edit the result." },
+    ],
+  },
 };
