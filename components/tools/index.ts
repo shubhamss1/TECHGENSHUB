@@ -1,5 +1,6 @@
 import type { ComponentType } from "react";
 import CaptionGenerator from "./CaptionGenerator";
+import ContentCalendarPlanner from "./ContentCalendarPlanner";
 import HashtagGenerator from "./HashtagGenerator";
 import InstagramBioGenerator from "./InstagramBioGenerator";
 import ThumbnailTextGenerator from "./ThumbnailTextGenerator";
@@ -12,4 +13,5 @@ export const TOOL_COMPONENTS: Record<string, ComponentType> = {
   "caption-generator": CaptionGenerator,
   "youtube-title-ideas": YouTubeTitleGenerator,
   "thumbnail-text-ideas": ThumbnailTextGenerator,
+  "content-calendar-planner": ContentCalendarPlanner,
 };
